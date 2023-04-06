@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+/*-------------------------
+GENERAL
+-------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+/*-------------------------
+NAVBAR 
+-------------------------*/
+nav {
+  -webkit-box-shadow: 0px 3px 14px 3px rgba(49, 49, 49, 0.18);
+          box-shadow: 0px 3px 14px 3px rgba(49, 49, 49, 0.18);
+  /* Set the border hamburger color */
+  /* Setting the stroke hamburger*/
+}
+@media screen and (min-width: 992px) {
+  nav .container-fluid {
+    padding: 0px 80px;
+  }
+}
+nav img {
+  width: 50px;
+  height: 50px;
+}
+nav .nav-link {
+  margin-left: 0px;
+}
+nav .nav-link:hover {
+  color: rgb(242, 114, 11);
+}
+@media screen and (min-width: 992px) {
+  nav .nav-link {
+    margin-left: 50px;
+  }
+}
+nav .custom-toggler.navbar-toggler {
+  border-color: rgb(242, 114, 11);
+}
+nav .custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(242, 114, 11)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+nav .activePage {
+  color: rgb(242, 114, 11);
+}/*# sourceMappingURL=style.css.map */

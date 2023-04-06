@@ -6,16 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NewLife</title>
 
-  <!-- BOOTSTRAP  -->
+  <!-- BOOTSTRAP 5.2.3 -->
   <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
 
+
   <!-- CSS  -->
-  <link rel="stylesheet" href="./asset/css/style.min.css">
+  <link rel="stylesheet" href="./asset/css/style.css">
 </head>
 
 <body>
-  <h1>Hello, world!</h1>
 
+  <!-- 
+    HEADER
+    -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./asset/images/logo/logo.png" alt="logo newlife">
+        </a>
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto mt-4 mt-lg-0">
+            <a class="nav-link activePage" aria-current="page" href="index.html">Accueil</a>
+            <a class="nav-link " href="about.html">Qui sommes nous</a>
+            <a class="nav-link" href="events.html">Événement</a>
+            <a class="nav-link" href="species.html">Les espèces</a>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- BOOTSTRAP SCRIPT  -->
+  <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
