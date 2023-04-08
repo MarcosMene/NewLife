@@ -29,6 +29,11 @@ a:hover {
   color: rgb(242, 115, 10);
 }
 
+.orange {
+  color: #fff;
+  background-color: rgb(242, 115, 10);
+}
+
 /*-------------------------
 NAVBAR 
 -------------------------*/
@@ -45,8 +50,12 @@ nav {
   }
 }
 nav img {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+}
+@media screen and (min-width: 992px) {
+  nav img {
+    width: 50px;
+  }
 }
 nav .nav-link {
   margin-left: 0px;
@@ -215,4 +224,55 @@ nav .activePage {
 }
 .news .card .card-text {
   font-size: 0.9rem;
+}
+
+.newsletter {
+  width: 100%;
+  position: relative;
+  background-image: url("/asset/images/newsletter.png");
+  background-color: #E6E7E2;
+  height: 450px;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 0;
+}
+@media screen and (min-width: 768px) {
+  .newsletter {
+    background-size: 350px;
+    background-position: 10% 100%;
+    height: 500px;
+  }
+}
+.newsletter img {
+  width: 100%;
+  height: 100%;
+}
+.newsletter-card {
+  position: absolute;
+  background-color: #fff;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  padding: 20px;
+  max-width: 600px;
+}
+@media screen and (min-width: 768px) {
+  .newsletter-card {
+    left: 45%;
+    top: 25%;
+  }
+}
+.newsletter-card-title {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.newsletter-card h3 {
+  font-size: 1rem;
+  margin: 10px 0 20px;
+  text-align: center;
+}
+.newsletter-card p {
+  font-size: 0.8rem;
 }/*# sourceMappingURL=style.css.map */
