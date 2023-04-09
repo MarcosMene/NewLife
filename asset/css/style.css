@@ -40,7 +40,6 @@ NAVBAR
 nav {
   -webkit-box-shadow: 0px 3px 14px 3px rgba(49, 49, 49, 0.18);
           box-shadow: 0px 3px 14px 3px rgba(49, 49, 49, 0.18);
-  height: 10vh;
   /* Set the border hamburger color */
   /* Setting the stroke hamburger*/
 }
@@ -118,7 +117,7 @@ nav .activePage {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 50%;
+  bottom: 10%;
   background-color: rgba(0, 67, 111, 0.6156862745);
   width: 80%;
   border-radius: 1rem;
@@ -128,14 +127,14 @@ nav .activePage {
 @media screen and (min-width: 768px) {
   .carousel-caption {
     top: 20%;
-    bottom: 50%;
+    bottom: 60%;
     max-width: 600px;
   }
 }
 @media screen and (min-width: 1200px) {
   .carousel-caption {
     top: 30%;
-    bottom: 40%;
+    bottom: 30%;
     max-width: 600px;
     left: 12%;
     -webkit-transform: translateX(0);
@@ -159,9 +158,9 @@ nav .activePage {
 }
 .carousel-icon-down {
   position: absolute;
-  bottom: 1%;
+  bottom: 2%;
   left: 50%;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   color: rgba(255, 255, 255, 0.6117647059);
@@ -231,7 +230,7 @@ nav .activePage {
   position: relative;
   background-image: url("/asset/images/newsletter.png");
   background-color: #E6E7E2;
-  height: 450px;
+  height: 400px;
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: 0;
@@ -275,4 +274,36 @@ nav .activePage {
 }
 .newsletter-card p {
   font-size: 0.8rem;
+}
+
+.footer {
+  background-color: #F2F2F2;
+  text-align: center;
+  padding: 20px 0 40px;
+  font-size: 0.8rem;
+}
+.footer a {
+  color: #0F1110;
+  text-decoration: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.footer a:hover {
+  color: rgb(242, 115, 10);
+}
+.footer .icons {
+  max-width: 500px;
+  margin: 30px auto;
+}
+.footer .icons i {
+  font-size: 1.8rem;
+}
+.footer .address {
+  margin-top: 20px;
+}
+.footer .address-title {
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
