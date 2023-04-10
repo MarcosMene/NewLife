@@ -21,8 +21,8 @@ body {
 a {
   color: #fff;
   text-decoration: none;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 a:hover {
@@ -295,14 +295,14 @@ nav .activePage {
 .footer {
   background-color: #F2F2F2;
   text-align: center;
-  padding: 20px 0 40px;
+  padding: 20px 0;
   font-size: 0.8rem;
 }
 .footer a {
   color: #0F1110;
   text-decoration: none;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .footer a:hover {
   color: rgb(242, 115, 10);
