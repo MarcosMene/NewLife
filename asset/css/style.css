@@ -47,6 +47,29 @@ a:hover {
   margin: auto;
 }
 
+.hero-title {
+  font-size: 1.5rem;
+  text-align: left;
+  text-transform: uppercase;
+  margin-top: 5px;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
+
 /*----------------END GENERAL-------------------------*/
 /*--------- INDEX PAGE -------------------------*/
 /*NAVBAR*/
@@ -130,7 +153,7 @@ nav .activePage {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 12%;
+  bottom: 30%;
   background-color: rgba(0, 67, 111, 0.6156862745);
   width: 80%;
   border-radius: 1rem;
@@ -140,21 +163,25 @@ nav .activePage {
 @media screen and (min-width: 480px) {
   .carousel-caption {
     top: 20%;
-    bottom: 20%;
+    bottom: 40%;
     max-width: 600px;
   }
 }
 @media screen and (min-width: 768px) {
   .carousel-caption {
     top: 20%;
-    bottom: 30%;
-    max-width: 600px;
+    bottom: 45%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .carousel-caption {
+    bottom: 50%;
   }
 }
 @media screen and (min-width: 1200px) {
   .carousel-caption {
     top: 20%;
-    bottom: 30%;
+    bottom: 45%;
     max-width: 600px;
     left: 12%;
     -webkit-transform: translateX(0);
@@ -166,6 +193,21 @@ nav .activePage {
   text-align: left;
   text-transform: uppercase;
   margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .carousel-header-text {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .carousel-header-text {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .carousel-header-text {
+    font-size: 2.5rem;
+  }
 }
 .carousel .divider {
   width: 30%;
@@ -248,7 +290,7 @@ nav .activePage {
 .newsletter {
   width: 100%;
   position: relative;
-  background-image: url("/asset/images/newsletter.png");
+  background-image: url("/asset/images/newsletter2.png");
   background-color: #E6E7E2;
   height: 480px;
   background-position: 100% 100%;
@@ -350,7 +392,7 @@ nav .activePage {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 10%;
+  bottom: 30%;
   background-color: rgba(0, 67, 111, 0.6156862745);
   width: 80%;
   border-radius: 1rem;
@@ -383,13 +425,6 @@ nav .activePage {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-}
-.hero-description .hero-title {
-  font-size: 1.3rem;
-  text-align: left;
-  text-transform: uppercase;
-  margin-top: 5px;
-  color: #fff;
 }
 .hero-description .divider {
   width: 30%;
