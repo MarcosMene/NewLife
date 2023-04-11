@@ -9,16 +9,15 @@
   <!-- BOOTSTRAP 5.2.3 -->
   <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
 
-
   <!-- CSS  -->
   <link rel="stylesheet" href="./asset/css/style.css">
 </head>
 
-<body>
+<!-- FONT AWESOME  -->
+<script src="https://kit.fontawesome.com/1a0b88a9d7.js" crossorigin="anonymous"></script>
 
-  <!-- 
-    HEADER
-    -->
+<body>
+  <!-- HEADER-->
   <header>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
@@ -33,16 +32,219 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto mt-4 mt-lg-0">
             <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
-            <a class="nav-link " href="about.html">Qui sommes nous</a>
+            <a class="nav-link" href="about.html">Qui sommes nous</a>
             <a class="nav-link activePage" href="events.html">Événement</a>
             <a class="nav-link" href="species.html">Les espèces</a>
-
           </div>
         </div>
       </div>
     </nav>
   </header>
 
+  <!-- START MAIN  -->
+  <main>
+
+    <!-- START HERO  -->
+    <section class="hero hero-events">
+      <div class="p-5 mb-4 hero-container">
+        <div class="container-fluid py-5">
+          <div class="hero-description">
+            <h1 class="display-5 fw-bold hero-title">ÉVÉNEMENTS</h1>
+            <div class="divider"></div>
+            <p>Pretium hac senectus enim lacus odio faucibus eros tincidunt, nostra sapien aliquam vitae ad ac nullam
+              tempor facilisis, non mollis neque placerat per ridiculus pharetra urna, eleifend rutrum etiam molestie
+              augue nec volutpat. </p>
+          </div>
+          <div class="carousel-icon-down">
+            <a href="#news">
+              <i class="fa-solid fa-angles-down"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END HERO  -->
+
+    <!-- START NEWS  -->
+    <section class="news" id="news">
+
+      <!-- STAR CONTAINER  -->
+      <div class="container">
+        <h2 class="news-title text-center">LES ACTUALITÉS NEWLIFE</h2>
+        <div class="divider orange m-auto mb-1 mb-md-4"></div>
+        <p class="p-0">Le Fonds Mondial pour la Nature NewLife est l'une des toutes premières organisations
+          indépendantes de
+          protection de l'environnement dans le monde, avec un réseau actif dans plus de 100 pays et fort du soutien de
+          près de 6 millions de membres.
+        </p>
+        <p class="p-0"> le NewLife France, Fondation reconnue d'utilité publique, oeuvre pour une planète
+          vivante depuis Paris, Marseille, les Alpes, la Guyane et la Nouvelle-Calédonie.</p>
+        <!-- END NEWS  -->
+
+        <!-- START FORM  -->
+        <article class="event-form">
+          <h3 class="event-form-title">RECHERCHER UNE ACTUALITÉ</h3>
+          <form>
+            <div class="row">
+              <div class="col-12 col-sm-6 input-div">
+                <label for="keyword">Mots clés</label>
+                <input type="text" class="form-control" id="keyword" aria-label="key word" required>
+              </div>
+              <div class="col-12 col-sm-6 input-div">
+                <label for="published">Publié</label>
+                <select name="published" id="published" class="form-select" aria-label="published">
+                  <option selected value="">Choisissez une publication</option>
+                  <option value="1">Hier</option>
+                  <option value="2">Une semaine</option>
+                  <option value="3">Un mois</option>
+                </select>
+              </div>
+
+              <div class="col-12 col-sm-6 input-div">
+                <label for="">Date</label>
+                <input type="date" id="date" name="date" class="form-control" required aria-label="date"
+                  placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31">
+              </div>
+
+              <div class="col-12 col-sm-6 input-div">
+                <label for="details">Détails</label>
+                <select name="details" id="details" class="form-select" aria-label="details">
+                  <option selected value="">Choisissez une publication</option>
+                  <option value="1">Paris</option>
+                  <option value="2">Lyon</option>
+                  <option value="3">Mompellier</option>
+                </select>
+              </div>
+              <div class="d-grid d-md-flex justify-content-md-end mt-3">
+                <button class="btn btn-outline-secondary orange" type="submit">Rechercher</button>
+              </div>
+            </div>
+          </form>
+        </article>
+        <!-- END FORM  -->
+
+
+        <!-- START ACTUALITY  -->
+        <div class="container actuality p-0">
+          <!-- ROW  -->
+          <div class="row d-flex align-items-center">
+            <h3 class="actuality-title p-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, sequi.</h3>
+            <div class="text-center text-md-start col-12 col-md-4 p-0 pe-md-3">
+              <div class="actuality-img">
+
+                <img src="./asset/images/panda.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-12 col-md-8 p-0">
+              <h3 class="actuality-header p-0">20/03/2023</h3>
+              <p class="actuality-text p-0">Feugiat ornare dis phasellus porta eu hendrerit ut massa, id est
+                natoque
+                dictum neque
+                dictumst sagittis
+                pellentesque, proin tempus ullamcorper montes ligula praesent tincidunt. Aliquet arcu curae egestas
+                pharetra dignissim senectus, nascetur risus feugiat scelerisque vel, malesuada mollis lacus phasellus
+                iaculis. </p>
+              <a href="#" class="read-more">
+                Savoir plus
+              </a>
+            </div>
+          </div>
+          <!-- ROW  -->
+          <div class="row d-flex align-items-center">
+            <h3 class="actuality-title p-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, sequi.</h3>
+            <div class="text-center text-md-start col-12 col-md-4 p-0 pe-md-3">
+              <div class="actuality-img">
+
+                <img src="./asset/images/dolphin.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-12 col-md-8 p-0">
+              <h3 class="actuality-header p-0">20/03/2023</h3>
+              <p class="actuality-text p-0">Feugiat ornare dis phasellus porta eu hendrerit ut massa, id est
+                natoque
+                dictum neque
+                dictumst sagittis
+                pellentesque, proin tempus ullamcorper montes ligula praesent tincidunt. Aliquet arcu curae egestas
+                pharetra dignissim senectus, nascetur risus feugiat scelerisque vel, malesuada mollis lacus phasellus
+                iaculis. </p>
+              <a href="#" class="read-more">
+                Savoir plus
+              </a>
+            </div>
+          </div>
+          <!-- ROW  -->
+          <div class="row d-flex align-items-center">
+            <h3 class="actuality-title p-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, sequi.</h3>
+            <div class="text-center text-md-start col-12 col-md-4 p-0 pe-md-3">
+              <div class="actuality-img">
+
+                <img src="./asset/images/wave.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-12 col-md-8 p-0">
+              <h3 class="actuality-header p-0">20/03/2023</h3>
+              <p class="actuality-text p-0">Feugiat ornare dis phasellus porta eu hendrerit ut massa, id est
+                natoque
+                dictum neque
+                dictumst sagittis
+                pellentesque, proin tempus ullamcorper montes ligula praesent tincidunt. Aliquet arcu curae egestas
+                pharetra dignissim senectus, nascetur risus feugiat scelerisque vel, malesuada mollis lacus phasellus
+                iaculis. </p>
+              <a href="#" class="read-more">
+                Savoir plus
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+        <!-- END ACTUALITY  -->
+
+
+      </div>
+      <!-- END CONTAINER  -->
+    </section>
+    <!-- END NEWS  -->
+
+    <!-- START FOOTER  -->
+    <section class="footer">
+      <div class="container-fluid">
+        <div class="navbar-nav d-flex flex-column justify-content-around flex-md-row">
+          <a class="nav-link" href="#">Contenu et propriete intellectuelle</a>
+          <a class="nav-link" href="#">Mentions légales</a>
+          <a class="nav-link" href="#">Droit des personnes</a>
+          <a class="nav-link" href="#">NewLife dans le monde</a>
+        </div>
+        <div class="icons d-flex justify-content-around">
+          <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+        <div class="address">
+          <h4 class="address-title">NewLife</h4>
+          <p>12 rue de La Patrie 75000 <br>
+            75000 Paris<br>
+            Tel:0567766666</p>
+        </div>
+        <div class="copyright">
+          © 2023 NewLife. All rights reserved.
+        </div>
+      </div>
+    </section>
+    <!-- END FOOTER  -->
+  </main>
+  <!-- END MAIN  -->
 
   <!-- BOOTSTRAP SCRIPT  -->
   <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
