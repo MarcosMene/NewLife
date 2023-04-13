@@ -660,6 +660,7 @@ nav .activePage {
   display: block;
   width: 70%;
   text-align: center;
+  pointer-events: none;
 }
 @media screen and (min-width: 768px) {
   .specie .specie-title {
@@ -684,6 +685,7 @@ nav .activePage {
 }
 .specie .cover:hover {
   background-color: rgba(2, 28, 28, 0.2);
+  z-index: 3;
 }
 .specie img {
   width: 100%;
