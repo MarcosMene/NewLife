@@ -61,6 +61,28 @@ a:hover {
   margin: auto;
 }
 
+::-webkit-scrollbar {
+  width: 0.8em;
+  height: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(242, 115, 10);
+  border-radius: 100vw;
+}
+
+@supports (scrollbar-color: rgb(242, 115, 10) #fff) {
+  * {
+    scrollbar-color: rgb(242, 115, 10) #fff;
+    scrollbar-width: auto;
+  }
+}
 .hero-title {
   font-size: 1.5rem;
   text-align: left;
@@ -167,7 +189,7 @@ nav .activePage {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 30%;
+  bottom: 25%;
   background-color: rgba(0, 67, 111, 0.6156862745);
   width: 80%;
   border-radius: 1rem;
@@ -177,7 +199,7 @@ nav .activePage {
 @media screen and (min-width: 480px) {
   .carousel-caption {
     top: 20%;
-    bottom: 40%;
+    bottom: 20%;
     max-width: 600px;
   }
 }
@@ -189,7 +211,7 @@ nav .activePage {
 }
 @media screen and (min-width: 992px) {
   .carousel-caption {
-    bottom: 50%;
+    bottom: 40%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -234,7 +256,7 @@ nav .activePage {
 }
 .carousel-icon-down {
   position: absolute;
-  bottom: 2%;
+  bottom: 6%;
   left: 50%;
   font-size: 1.5rem;
   -webkit-transform: translateX(-50%);
@@ -295,7 +317,7 @@ nav .activePage {
   font-size: 1rem;
   color: rgb(242, 115, 10);
   text-align: center;
-  font-weight: bold;
+  font-weight: 500;
 }
 .news .card .card-text {
   font-size: 0.9rem;
@@ -304,7 +326,7 @@ nav .activePage {
 .newsletter {
   width: 100%;
   position: relative;
-  background-image: url("/asset/images/newsletter2.jpg");
+  background-image: url("./../images/newsletter2.jpg");
   background-color: #E6E7E2;
   height: 480px;
   background-position: 100% 100%;
@@ -314,7 +336,7 @@ nav .activePage {
 @media screen and (min-width: 768px) {
   .newsletter {
     background-size: 350px;
-    background-position: 20% 100%;
+    background-position: 15% 50%;
     height: 500px;
   }
 }
@@ -422,16 +444,10 @@ nav .activePage {
     bottom: 40%;
   }
 }
-@media screen and (min-width: 768px) {
-  .hero-description {
-    bottom: 50%;
-  }
-}
 @media screen and (min-width: 992px) {
   .hero-description {
     top: 20%;
     left: 12%;
-    bottom: 40%;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
@@ -440,6 +456,7 @@ nav .activePage {
   .hero-description {
     top: 20%;
     left: 12%;
+    bottom: 30%;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
@@ -455,15 +472,6 @@ nav .activePage {
   margin-top: 20px;
   color: #fff;
   font-size: 0.9rem;
-}
-.hero-description-icon-down {
-  position: absolute;
-  bottom: 2%;
-  left: 50%;
-  font-size: 1.5rem;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  color: rgba(255, 255, 255, 0.6117647059);
 }
 
 .news .news-title {
@@ -494,7 +502,7 @@ nav .activePage {
   font-size: 1rem;
   color: rgb(242, 115, 10);
   text-align: left;
-  font-weight: bold;
+  font-weight: 500;
   margin-top: 10px;
 }
 .news-cards .card-text {
